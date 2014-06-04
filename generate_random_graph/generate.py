@@ -20,8 +20,6 @@ if __name__ == '__main__':
 		for end_node in G.nodes():
 			if end_node in G.neighbors(node):
 				f2.write('%d,%d,%d\n' % (node, end_node, 1))
-			else:
-				f2.write('%d,%d,Integer.MAX_VALUE\n' % (node, end_node))
 
 	f1.close()
 	f2.close()
